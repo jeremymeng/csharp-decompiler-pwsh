@@ -12,7 +12,7 @@ namespace CSharpDecompilerProvider
         }
         public override bool IsContainer { get => false; }
 
-        public override string Decompile
+        public override string Decompiled
         {
             get
             {

@@ -19,6 +19,6 @@ namespace CSharpDecompilerProvider
 
         public virtual bool IsContainer { get => false; }
 
-        public abstract string Decompile { get; }
+        public abstract string Decompiled { get; }
     }
 }

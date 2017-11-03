@@ -15,6 +15,6 @@ namespace CSharpDecompilerProvider
 
         public IEnumerable<TypeNode> Types { get; set; }
 
-        public override string Decompile => $"namespace {Name} {{ }}";
+        public override string Decompiled => $"namespace {Name} {{ }}";
     }
 }

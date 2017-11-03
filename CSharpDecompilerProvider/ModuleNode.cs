@@ -13,6 +13,6 @@ namespace CSharpDecompilerProvider
 
         public IEnumerable<NamespaceNode> Namespaces { get; set; }
 
-        public override string Decompile => decompiler.DecompileModuleAndAssemblyAttributesToString();
+        public override string Decompiled => decompiler.DecompileModuleAndAssemblyAttributesToString();
     }
 }

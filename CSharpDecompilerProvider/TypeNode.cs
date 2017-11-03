@@ -17,7 +17,7 @@ namespace CSharpDecompilerProvider
         public IEnumerable<TypeNode> NestedTypes { get; set; }
         public IEnumerable<MemberNode> Members { get; set; }
 
-        public override string Decompile
+        public override string Decompiled
         {
             get
             {
