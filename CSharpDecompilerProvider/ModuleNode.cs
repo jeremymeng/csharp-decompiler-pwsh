@@ -11,6 +11,8 @@ namespace CSharpDecompilerProvider
         {
         }
 
+        public override bool IsContainer { get => true; }
+
         public IEnumerable<NamespaceNode> Namespaces { get; set; }
 
         public override string Decompiled => decompiler.DecompileModuleAndAssemblyAttributesToString();
