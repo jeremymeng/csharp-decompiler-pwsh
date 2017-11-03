@@ -46,7 +46,7 @@ namespace CSharpDecompilerProvider
                 };
             }
 
-            var parts = path.Split('/');
+            var parts = path.Split('/', '\\');
             if (parts.Length == 1)
             {
                 var @namespace = parts[0];
@@ -108,7 +108,7 @@ namespace CSharpDecompilerProvider
 
             var drive = this.PSDriveInfo as CSharpDecompilerDriveInfo;
             var types = drive.CSharpDecompiler.TypeSystem.Compilation.MainAssembly.GetAllTypeDefinitions();
-            var parts = path.Split('/');
+            var parts = path.Split('/', '\\');
             if (parts.Length == 1)
             {
                 var namespaces = types.Select(t => t.Namespace)
